@@ -166,32 +166,6 @@ python compare_ctpf_vs_qctpf.py
 
 ---
 
-## ⚙️ Key Parameters
-
-| Parameter | Description |
-|-----------|-------------|
-| `num_particles = 500` | Swarm size for particle filter |
-| `num_qubits = 8–9` | VQC qubit count |
-| `shots = 64–128` | Quantum circuit shots per step |
-| `H = 8` | Future hypothesis horizon (steps) |
-| `M = 5` | Hypotheses generated per particle |
-| `smooth_alpha = 0.1` | EMA smoothing on guidance state |
-| `generations = 600` | QNEAT training generations |
-| `population_size = 220` | QNEAT population |
-
----
-
-## 🧪 Maneuver Library
-
-| Maneuver | Parameters | G-Load |
-|----------|-----------|--------|
-| Straight | — | 0g |
-| Coordinated Turn | `g_force = 1.5–9.0` | up to 9g |
-| Jink | `freq = 0.5–3.0 Hz, amplitude = 20–60 m/s²` | ~2–6g lateral |
-| Climb/Dive | `vertical_g = ±1.0–6.0` | up to 6g vertical |
-
----
-
 ## 📜 License
 
 Research prototype. Not for operational use. Results from simulated Qiskit backends only.
